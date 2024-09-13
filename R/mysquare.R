@@ -1,4 +1,4 @@
-#' Title
+#' @title square function
 #'
 #' @param x a vector of quantitative data
 #'
