@@ -2,7 +2,7 @@
 % Please edit documentation in R/mysquare.R
 \name{mysquare}
 \alias{mysquare}
-\title{Title}
+\title{square function}
 \usage{
 mysquare(x)
 }
@@ -13,7 +13,7 @@ mysquare(x)
 a vector of quantitative data
 }
 \description{
-Title
+square function
 }
 \examples{
 mysquare(x = 1:10)
