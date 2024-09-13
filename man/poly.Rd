@@ -11,7 +11,7 @@ poly(degree, coefficients, x)
 
 \item{coefficients}{your given coefficients}
 
-\item{x}{the variable}
+\item{x}{the given x value you want to evaluate the polynomial at}
 }
 \value{
 a polynomial

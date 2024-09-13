@@ -2,4 +2,3 @@
 
 export(mysquare)
 export(poly)
-export(scatterhist)
