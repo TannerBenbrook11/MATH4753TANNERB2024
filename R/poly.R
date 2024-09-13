@@ -7,7 +7,7 @@
 #' @return a polynomial
 #' @export
 #'
-#' @examples poly(5, (1, 2, 3, 4, 5, 6), x)
+#' @examples poly(5, [1, 2, 3, 4, 5, 6], x)
 poly <- function(degree, coefficients, x) {
   # degree: the degree of the polynomial
   # coefficients: a vector of coefficients
