@@ -2,7 +2,7 @@
 % Please edit documentation in R/mybin.R
 \name{mybin}
 \alias{mybin}
-\title{Title mybin function}
+\title{mybin function}
 \usage{
 mybin(iter = 100, n = 10, p = 0.5)
 }
@@ -17,7 +17,7 @@ mybin(iter = 100, n = 10, p = 0.5)
 a table of relative frequencies
 }
 \description{
-Title mybin function
+mybin function
 }
 \examples{
 mybin(iter=10000,n=100, p=0.5)
