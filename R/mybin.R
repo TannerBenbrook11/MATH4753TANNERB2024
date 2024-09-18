@@ -1,4 +1,4 @@
-#' Title mybin function
+#' @title mybin function
 #'
 #' @param iter the iterator
 #' @param n number of times it is tested
