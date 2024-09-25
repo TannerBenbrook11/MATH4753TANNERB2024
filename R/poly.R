@@ -1,4 +1,4 @@
-#' polynomial generator
+#' @title polynomial generator
 #'
 #' @param degree degree of polynomial
 #' @param coefficients your given coefficients
