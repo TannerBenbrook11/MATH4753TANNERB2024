@@ -34,7 +34,3 @@ myncurve <- function(mu, sigma, a) {
   # Return mean, sigma, and calculated area in a list
   list(mu = mu, sigma = sigma, area = area)
 }
-
-# Example usage
-result <- myncurve(mu = 0, sigma = 1, a = 1.5)
-print(result)

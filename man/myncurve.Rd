@@ -14,7 +14,7 @@ myncurve(mu, sigma, a)
 \item{a}{upper limit}
 }
 \value{
-something
+the calculated mean, sd and area in a list
 }
 \description{
 myncurve
