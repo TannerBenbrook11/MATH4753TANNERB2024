@@ -4,7 +4,7 @@
 #' @param sigma standard deviation
 #' @param a upper limit
 #'
-#' @return something
+#' @return the calculated mean, sd and area in a list
 #' @export
 #'
 #' @examples myncurve(mu = 10, sigma = 5, a = 6)
