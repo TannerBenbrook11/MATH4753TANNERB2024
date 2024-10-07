@@ -13,7 +13,8 @@
 #' @examples myncurve(mu = 10, sigma = 5, a = 6)
 myncurve <- function(mu, sigma, a) {
   # Plot the normal curve
-  curve(dnorm(x = x, mean = mu, sd = sigma),
+  x <- seq(mu - 3 * sigma, mu + 3 * sigma, length = 1000)
+  curve(dnorm(x, mean = mu, sd = sigma),
         xlim = c(mu - 3 * sigma, mu + 3 * sigma),
         main = expression(paste("Normal Curve: ", mu, "=", mu, ", ", sigma, "=", sigma)),
         ylab = "Density",
