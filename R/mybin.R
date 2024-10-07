@@ -5,6 +5,10 @@
 #' @param p the probability
 #'
 #' @return a table of relative frequencies
+#'
+#' @importFrom grDevices rainbow
+#' @importFrom graphics abline barplot curve polygon
+#'
 #' @export
 #'
 #' @examples mybin(iter=10000,n=100, p=0.5)

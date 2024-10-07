@@ -4,6 +4,8 @@
 #' @param sigma standard deviation
 #' @param a upper limit
 #'
+#' @importFrom graphics abline barplot curve polygon
+#'
 #' @return the calculated mean, sd and area in a list
 #' @export
 #'
