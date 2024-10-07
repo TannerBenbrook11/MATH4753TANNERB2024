@@ -3,4 +3,5 @@
 export(mybin)
 export(myncurve)
 export(mysquare)
+export(ntickets)
 export(poly)
