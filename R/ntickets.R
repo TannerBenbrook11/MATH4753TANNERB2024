@@ -21,10 +21,8 @@ ntickets <- function(N, gamma, p) {
       if (1 - prob <= gamma) {
         return(n)
       }
-
       n <- n + 1  # Keep increasing n if condition is not met
     }
-
     return(NULL)
   }
 
@@ -33,6 +31,7 @@ ntickets <- function(N, gamma, p) {
     stddev <- sqrt(N * p * (1 - p))
     return(qnorm(1 - gamma, mean, stddev))
   }
+
 
 
   plot_objective <- function(N, gamma, p, is_discrete = TRUE) {
@@ -76,23 +75,14 @@ ntickets <- function(N, gamma, p) {
 
     }
     return(n_intersect)
-    ntickets(N = 200, gamma = 0.02, p = 0.95)
-    plot_objective(N = 200, gamma = 0.02, p = 0.95, is_discrete = TRUE)
-    plot_objective(N = 200, gamma = 0.02, p = 0.95, is_discrete = FALSE)
+  }
 
 
   nd <- find_nd_discrete(N, gamma, p)
   nc <- find_nc_normal(N, gamma, p)
 
-  result <- list(nd = nd, nc = nc, N = N, p = p, gamma = gamma)
-  print(result)
+  result <- list(nd = plot_objective(N, gamma, p, is_discrete = TRUE), nc = plot_objective(N, gamma, p, is_discrete = FALSE), N = N, p = p, gamma = gamma)
 
   # Return the named list
   return(result)
-
-  ntickets(N = 200, gamma = 0.02, p = 0.95)
-  plot_objective(N = 200, gamma = 0.02, p = 0.95, is_discrete = TRUE)
-  plot_objective(N = 200, gamma = 0.02, p = 0.95, is_discrete = FALSE)
-
-  }
 }
