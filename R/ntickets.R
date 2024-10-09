@@ -13,11 +13,6 @@
 
 # ntickets function now only calls find_nd_discrete and find_nc_normal
 ntickets <- function(N, gamma, p) {
-  find_nc_distribution <- function(N, gamma, p) {
-    mean <- N * p
-    stddev <- sqrt(N * p * (1 - p))
-    return(qnorm(1 - gamma, mean, stddev))
-  }
 
   find_nd_distribution <- function(N, gamma, p) {
     n <- N
@@ -29,6 +24,12 @@ ntickets <- function(N, gamma, p) {
       n <- n + 1
     }
     return(NULL)
+  }
+
+  find_nc_distribution <- function(N, gamma, p) {
+    mean <- N * p
+    stddev <- sqrt(N * p * (1 - p))
+    return(qnorm(1 - gamma, mean, stddev))
   }
 
   plot_objective <- function(N, gamma, p, is_discrete = TRUE) {
